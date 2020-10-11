@@ -1,0 +1,45 @@
+html, body, h1, h2, h3, p, a, img, ul, li, form, 
+footer, header, nav, section {
+    margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+a:hover {
+    outline: 0;
+}
+
+img {
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+header,
+footer {
+    width: 100%;
+}
+
+form {
+    margin: 0;
+}
+input, button {
+    outline: none;
+    border: none;
+}
+
+
