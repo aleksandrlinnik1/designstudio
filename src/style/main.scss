@@ -1,1 +1,48 @@
 @import "reset";
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'),
+         url('../fonts/poppins-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/poppins-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+.top-main {
+    height: 100vh;
+    background-image: url("../image/homebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;   
+    background-position-y: center;
+}
+.header {
+    position: absolute;
+    top: 0;
+}
+.header-logo__block {
+    height: 5vw;
+    padding: 1vw;
+    @media (max-width: 667px) {
+        height: 10vw;
+    }
+}
+.header__logo {
+    img {
+        max-width: 100%;
+        max-height: 100%
+    }
+}
+.black-bg {
+    background-image: url("../image/blackbg.png");
+    height: 100vh;
+}
