@@ -11,10 +11,12 @@
   }
 
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 *, *::before, *::after {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
  body {
     font-family: 'Poppins';
@@ -53,6 +55,8 @@ h1 {
     height: 8vw;
     width: 25vw;
     padding: 1vw 0 0 1vw;
+    background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, rgba(0, 0, 0, 40%)));
+    background: -o-linear-gradient(right bottom, transparent 50%, rgba(0, 0, 0, 40%) 50%);
     background: linear-gradient(to left top, transparent 50%, rgba(0, 0, 0, 40%) 50%);    
     @media (max-width: 667px) {
         height: 14vw;
@@ -77,13 +81,16 @@ h1 {
     z-index: 10;    
     cursor: pointer;
     background: #fff;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-clip: content-box;    
     border-top: 11px solid transparent;
     border-bottom: 11px solid transparent;
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
     -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
     &:before,
     &:after {
@@ -95,8 +102,10 @@ h1 {
         right: 0;
         will-change: rotate;
         -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
         -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
     }
     &:before {
@@ -113,7 +122,8 @@ h1 {
     }
     &.active:before {
         -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
         top: 0;
         background: #fff;
         width: 110%;
@@ -121,7 +131,8 @@ h1 {
     &.active:after {
         bottom: 0;
         -webkit-transform: rotate(-135deg);
-        transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg);
         background: #fff;
         width: 110%;
     }
@@ -135,33 +146,52 @@ h1 {
     right: 0;
     background: #2a3140;    
     z-index: 5;
-    transform-origin: right top;
-    transform: scale(0);
+    -webkit-transform-origin: right top;
+        -ms-transform-origin: right top;
+            transform-origin: right top;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
     visibility: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
     &.open {
         opacity: 1;
         visibility: visible;
-        transform: scale(1);
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1);
         li {
             display: block;
-            animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5)
+            -webkit-animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5)
                 forwards;
-            animation-delay: 0.4s;
-            transform: rotate(-7deg);
-            transform-origin: right bottom;
+                    animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5)
+                forwards;
+            -webkit-animation-delay: 0.4s;
+                    animation-delay: 0.4s;
+            -webkit-transform: rotate(-7deg);
+                -ms-transform: rotate(-7deg);
+                    transform: rotate(-7deg);
+            -webkit-transform-origin: right bottom;
+                -ms-transform-origin: right bottom;
+                    transform-origin: right bottom;
             &:nth-of-type(2) {
-                animation-delay: 0.5s;
+                -webkit-animation-delay: 0.5s;
+                        animation-delay: 0.5s;
             }
             &:nth-of-type(3) {
-                animation-delay: 0.6s;
+                -webkit-animation-delay: 0.6s;
+                        animation-delay: 0.6s;
             }
             &:nth-of-type(4) {
-                animation-delay: 0.7s;
+                -webkit-animation-delay: 0.7s;
+                        animation-delay: 0.7s;
             }
             &:nth-of-type(5) {
-                animation-delay: 0.8s;
+                -webkit-animation-delay: 0.8s;
+                        animation-delay: 0.8s;
             }
         }
     }
@@ -195,6 +225,8 @@ h1 {
                 border: 1px solid rgba(255, 255, 255, 0.377);
                 color: #fff;
                 text-decoration: none;
+                -webkit-transition: 0.2s;
+                -o-transition: 0.2s;
                 transition: 0.2s;
                 background: #2a3140;
                 @media (max-width: 1024px) and (max-height: 414px) {
@@ -203,7 +235,9 @@ h1 {
                 &:hover,
                 &:active,
                 &:focus {
-                    transform: translateX(-2px);
+                    -webkit-transform: translateX(-2px);
+                        -ms-transform: translateX(-2px);
+                            transform: translateX(-2px);
                     padding-left: 6vw;
                     border: 1px solid rgba(255, 255, 255, 1);
                 }
@@ -232,15 +266,24 @@ h1 {
     position: absolute;
     top: 40%;
     left: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 65vw;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     @media (max-width: 1024px) {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         top: 30%;
     }
 }
@@ -250,8 +293,12 @@ h1 {
     @media (max-width: 1024px) {  
         position: absolute;
         bottom: -50vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex; 
-        justify-content: space-between;     
+        -webkit-box-pack: justify; 
+            -ms-flex-pack: justify; 
+                justify-content: space-between;     
         width: 80vw;
     }
     @media (max-width: 1024px) and (min-height: 768px) {  
@@ -315,7 +362,8 @@ h1 {
     background-image: url("../image/viber.webp");
 }
 .contact-tel {
-    animation: phone 1s ease-in-out infinite;
+    -webkit-animation: phone 1s ease-in-out infinite;
+            animation: phone 1s ease-in-out infinite;
     top: -4vw;
     left: 12vw;
     background-image: url("../image/tel.webp");
@@ -363,12 +411,16 @@ h1 {
     background-position-x: center;   
     background-position-y: center;
     &:hover {
-        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
     }
     @media (max-width: 1024px) {
         width: 5vw;
         height: 5vw;
         position: static;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     @media (max-width: 1024px) and (max-height: 768px) {
@@ -389,13 +441,21 @@ h1 {
     right: -3vw;
     top: 50%;
     font-size: 1.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #83D024;   
     border-radius: 50% 50% 0 0 / 100% 100% 0 0;
     overflow: hidden;
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
     @media (max-width: 1024px) {
         width: 15vw;
         height: 5vw;
@@ -417,13 +477,15 @@ h1 {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     font-size: 0.8vw;
-    animation: pulse 4s infinite;
+    -webkit-animation: pulse 4s infinite;
+            animation: pulse 4s infinite;
     &:hover {
         opacity: 0.5;
         cursor: pointer;
     }
     @media (max-width: 1024px) {
-        animation: pulse1024 4s infinite;
+        -webkit-animation: pulse1024 4s infinite;
+                animation: pulse1024 4s infinite;
     }
 }
 
@@ -433,8 +495,3 @@ h1 {
         width: 90%;
     }
 }
-
-
-
-
-
