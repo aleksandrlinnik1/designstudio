@@ -137,17 +137,14 @@ var trackCoordinates = function trackCoordinates(e) {
     var target = this.getBoundingClientRect();
     var x = e.clientX - target.left;
     var y = e.clientY - target.top;
+    buttonAboutUs.style.top = y + 'px';
 
-    if (x >= mainScreen.offsetWidth - 150) {
-      buttonAboutUs.style.top = y + 'px';
+    if (y <= 100) {
+      buttonAboutUs.style.top = 100 + 'px';
+    }
 
-      if (y <= 100) {
-        buttonAboutUs.style.top = 100 + 'px';
-      }
-
-      if (y >= mainScreen.offsetHeight - 150) {
-        buttonAboutUs.style.top = mainScreen.offsetHeight - 150 + 'px';
-      }
+    if (y >= mainScreen.offsetHeight - 150) {
+      buttonAboutUs.style.top = mainScreen.offsetHeight - 150 + 'px';
     }
   }
 }; //-----------------------scroll--------------------------------
@@ -204,7 +201,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64804" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49280" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

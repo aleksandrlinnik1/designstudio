@@ -19,15 +19,13 @@ const trackCoordinates = function (e) {
         const target = this.getBoundingClientRect();
         const x = e.clientX - target.left;
         const y = e.clientY - target.top;
-        if(x >= mainScreen.offsetWidth - 150) {
-            buttonAboutUs.style.top = y  + 'px';
-            if (y <= 100) {
-                buttonAboutUs.style.top = 100 + 'px';
-            }
-            if (y >= mainScreen.offsetHeight - 150) {
-                buttonAboutUs.style.top = mainScreen.offsetHeight - 150 + 'px';
-                }
-            }
+        buttonAboutUs.style.top = y  + 'px';
+        if (y <= 100) {
+            buttonAboutUs.style.top = 100 + 'px';
+        }
+        if (y >= mainScreen.offsetHeight - 150) {
+            buttonAboutUs.style.top = mainScreen.offsetHeight - 150 + 'px';
+            }            
         }    
 
     }; 
