@@ -335,7 +335,7 @@ h1 {
 .top-main {
   position: relative;
   height: 100vh;
-  background-image: url("/homebg.65313f34.png");
+  background-image: url("/homebg.f5278745.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -343,7 +343,7 @@ h1 {
 }
 
 .black-bg {
-  background-image: url("/blackbg.d109c42b.png");
+  background-image: url("/blackbg.07a7b743.webp");
   height: 100vh;
 }
 
@@ -408,7 +408,7 @@ h1 {
 .center__logo {
   width: 12vw;
   height: 12vw;
-  background-image: url("/logocentr.cb692642.svg");
+  background-image: url("/logocentr.59eaf72a.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
@@ -455,38 +455,38 @@ h1 {
 .contact-viber {
   top: 13vw;
   left: -5vw;
-  background-image: url("/viber.22591a83.png");
+  background-image: url("/viber.15af0401.webp");
 }
 
 .contact-tel {
   animation: phone 1s ease-in-out infinite;
   top: -4vw;
   left: 12vw;
-  background-image: url("/tel.76a19fbd.png");
+  background-image: url("/tel.ca4be8a7.webp");
 }
 
 .contact-telegram {
   top: -6vw;
   left: 1vw;
-  background-image: url("/telegram.71750e70.png");
+  background-image: url("/telegram.7e5cbad9.webp");
 }
 
 .contact-mail {
   top: 15vw;
   left: 50%;
-  background-image: url("/email.29fd80b1.png");
+  background-image: url("/email.e054bf3b.webp");
 }
 
 .center__skype {
   top: -11vw;
   left: 50%;
-  background-image: url("/skype.01bb6dcc.png");
+  background-image: url("/skype.bc078002.webp");
 }
 
 .center__cactus {
   top: 9vw;
   left: 15vw;
-  background-image: url("/cactus.13250bdf.png");
+  background-image: url("/cactus.db51a8ca.webp");
 }
 .center__cactus:hover {
   -webkit-animation: swing 0.6s ease;
