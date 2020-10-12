@@ -359,36 +359,36 @@ h1 {
 .contact-viber {
     top: 13vw;
     left: -5vw;
-    background-image: url("../image/viber.webp");
+    background-image: url("../image/viber.png");
 }
 .contact-tel {
     -webkit-animation: phone 1s ease-in-out infinite;
             animation: phone 1s ease-in-out infinite;
     top: -4vw;
     left: 12vw;
-    background-image: url("../image/tel.webp");
+    background-image: url("../image/tel.png");
 }
 
 .contact-telegram {
     top: -6vw;
     left: 1vw;
-    background-image: url("../image/telegram.webp"); 
+    background-image: url("../image/telegram.png"); 
 }
 .contact-mail {
     top: 15vw;
     left: 50%;
-    background-image: url("../image/email.webp");
+    background-image: url("../image/email.png");
 
 }
 .center__skype {
     top: -11vw;
     left: 50%;
-    background-image: url("../image/skype.webp");
+    background-image: url("../image/skype.png");
 }
 .center__cactus {
     top: 9vw;
     left: 15vw;
-    background-image: url("../image/cactus.webp");
+    background-image: url("../image/cactus.png");
     &:hover {
         -webkit-animation: swing 0.6s ease;
         animation: swing 0.6s ease;

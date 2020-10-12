@@ -548,7 +548,7 @@ h1 {
 .contact-viber {
   top: 13vw;
   left: -5vw;
-  background-image: url("/viber.15af0401.webp");
+  background-image: url("/viber.22591a83.png");
 }
 
 .contact-tel {
@@ -556,31 +556,31 @@ h1 {
   animation: phone 1s ease-in-out infinite;
   top: -4vw;
   left: 12vw;
-  background-image: url("/tel.ca4be8a7.webp");
+  background-image: url("/tel.76a19fbd.png");
 }
 
 .contact-telegram {
   top: -6vw;
   left: 1vw;
-  background-image: url("/telegram.7e5cbad9.webp");
+  background-image: url("/telegram.71750e70.png");
 }
 
 .contact-mail {
   top: 15vw;
   left: 50%;
-  background-image: url("/email.e054bf3b.webp");
+  background-image: url("/email.29fd80b1.png");
 }
 
 .center__skype {
   top: -11vw;
   left: 50%;
-  background-image: url("/skype.bc078002.webp");
+  background-image: url("/skype.01bb6dcc.png");
 }
 
 .center__cactus {
   top: 9vw;
   left: 15vw;
-  background-image: url("/cactus.db51a8ca.webp");
+  background-image: url("/cactus.13250bdf.png");
 }
 .center__cactus:hover {
   -webkit-animation: swing 0.6s ease;

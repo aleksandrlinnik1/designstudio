@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\fonts\\poppins-v13-latin-regular.woff2":[["poppins-v13-latin-regular.60371f50.woff2","fonts/poppins-v13-latin-regular.woff2"],"fonts/poppins-v13-latin-regular.woff2"],"./..\\fonts\\poppins-v13-latin-regular.woff":[["poppins-v13-latin-regular.52c3e6e4.woff","fonts/poppins-v13-latin-regular.woff"],"fonts/poppins-v13-latin-regular.woff"],"./..\\image\\homebg.webp":[["homebg.f5278745.webp","image/homebg.webp"],"image/homebg.webp"],"./..\\image\\blackbg.webp":[["blackbg.07a7b743.webp","image/blackbg.webp"],"image/blackbg.webp"],"./..\\image\\logocentr.svg":[["logocentr.cb692642.svg","image/logocentr.svg"],"image/logocentr.svg"],"./..\\image\\viber.webp":[["viber.15af0401.webp","image/viber.webp"],"image/viber.webp"],"./..\\image\\tel.webp":[["tel.ca4be8a7.webp","image/tel.webp"],"image/tel.webp"],"./..\\image\\telegram.webp":[["telegram.7e5cbad9.webp","image/telegram.webp"],"image/telegram.webp"],"./..\\image\\email.webp":[["email.e054bf3b.webp","image/email.webp"],"image/email.webp"],"./..\\image\\skype.webp":[["skype.bc078002.webp","image/skype.webp"],"image/skype.webp"],"./..\\image\\cactus.webp":[["cactus.db51a8ca.webp","image/cactus.webp"],"image/cactus.webp"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\fonts\\poppins-v13-latin-regular.woff2":[["poppins-v13-latin-regular.60371f50.woff2","fonts/poppins-v13-latin-regular.woff2"],"fonts/poppins-v13-latin-regular.woff2"],"./..\\fonts\\poppins-v13-latin-regular.woff":[["poppins-v13-latin-regular.52c3e6e4.woff","fonts/poppins-v13-latin-regular.woff"],"fonts/poppins-v13-latin-regular.woff"],"./..\\image\\homebg.webp":[["homebg.f5278745.webp","image/homebg.webp"],"image/homebg.webp"],"./..\\image\\blackbg.webp":[["blackbg.07a7b743.webp","image/blackbg.webp"],"image/blackbg.webp"],"./..\\image\\logocentr.svg":[["logocentr.cb692642.svg","image/logocentr.svg"],"image/logocentr.svg"],"./..\\image\\viber.png":[["viber.22591a83.png","image/viber.png"],"image/viber.png"],"./..\\image\\tel.png":[["tel.76a19fbd.png","image/tel.png"],"image/tel.png"],"./..\\image\\telegram.png":[["telegram.71750e70.png","image/telegram.png"],"image/telegram.png"],"./..\\image\\email.png":[["email.29fd80b1.png","image/email.png"],"image/email.png"],"./..\\image\\skype.png":[["skype.01bb6dcc.png","image/skype.png"],"image/skype.png"],"./..\\image\\cactus.png":[["cactus.13250bdf.png","image/cactus.png"],"image/cactus.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53457" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49180" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
