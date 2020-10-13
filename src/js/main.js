@@ -1,11 +1,11 @@
 // ----------------item search---------------------------
 const findEl = (sel, parent) => (parent || document).querySelector(sel);
 
-burgerBtn = findEl('.navBurger');
+burgerBtnOn = findEl('.navBurgerOn');
 overlay = findEl('.overlay');
-buttonAboutUs = findEl('.button-aboutUs');
+buttonAboutUs = findEl('#button-aboutUs');
+aboutUs = findEl('.aboutUs'); 
 mainScreen = findEl('.top-main');
-sectionAboutUs = findEl('#aboutUs');
 scrollButton = findEl('.top-main__scroll');
 
 
@@ -42,19 +42,30 @@ function scrollTo(element) {
 
 // -----------------------opening menu--------------------------
 const menuSwitch = function() {
-    burgerBtn.classList.toggle("active");
+    burgerBtnOn.classList.toggle("active");
     overlay.classList.toggle("open");
 };  
+
+// -----------------------opening section aboutUs--------------------------
+const aboutUsActive = function() {
+    aboutUs.classList.toggle("active");
+}
+
+
+
 
 
 
 
 
 // -----------------------event listeners-----------------------
-burgerBtn.addEventListener('click', menuSwitch);
+burgerBtnOn.addEventListener('click', menuSwitch);
 mainScreen.addEventListener('mousemove', trackCoordinates);
-buttonAboutUs.addEventListener('click', () => {scrollTo(sectionAboutUs);});
+aboutUs.addEventListener('mousemove', trackCoordinates);
 scrollButton.addEventListener('click', () => {scrollTo(sectionAboutUs);});
+buttonAboutUs.addEventListener('click', aboutUsActive);
+
+
 
 
 

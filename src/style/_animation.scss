@@ -116,3 +116,20 @@
       font-size: 2vw;
   }
 }
+
+@-webkit-keyframes orbit { 
+  from { -webkit-transform:rotate(0deg) } 
+  to { -webkit-transform:rotate(360deg) } 
+  }
+  @-moz-keyframes orbit { 
+  from { -moz-transform:rotate(0deg) } 
+  to { -moz-transform:rotate(360deg) } 
+  }
+  @-webkit-keyframes orbit2 { 
+    from { -webkit-transform:rotate(360deg) } 
+    to { -webkit-transform:rotate(0deg) } 
+    }
+    @-moz-keyframes orbit2 { 
+    from { -moz-transform:rotate(360deg) } 
+    to { -moz-transform:rotate(0deg) } 
+    }
